@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+<title>PetLovers</title>
+<meta name="viewport" content="width=device-width,
+ initial-scale=1.0, maximum-scale=1.0, user-scalable=no/">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="/__/firebase/5.8.4/firebase-app.js"></script>
+ <script src="/__/firebase/5.8.4/firebase-auth.js"></script>
+ <script src="/__/firebase/5.8.4/firebase-database.js"></script>
+ <script src="js/firebase-config.js"></script> 
+</head>
+<body>
+    <main id="sing-up" class="w-100 row m-0">
+    <section class="col-lg-6 d-none d-lg-block text-center">
+        <h1 class="pet-brand"><a href="sing-up.html">Pet L<i class=" paw-colourful fas fa-paw"></i>vers</a></h1>
+    </section>
+    <div class="text-center">
+    <h1 class="d-block d-lg-none d-xl-none">
+        Pet L<i class="paw-colourful fas fa-paw"></i>vers</h1>
+    <h4 class ="my-5">Faça seu cadastro</h4>  
+    </div>
+    <form class="form-sing-up">
+        <div class="form-group input-group mb-3">
+        <div class="input-group-append">
+            <span class="input-group-text">
+             <i class="paw-colourful fas fa-dog"></span>
+        </div>
+       <input type="text"
+        class="sing-up-petName input-sign-up form-control" 
+        placeholder="Nome do Pet"/>
+        </div>
+        <div class="form-group input-group mb-3">
+         <div class="input-group-append">
+            <span class="input-group-text"><i class="fas fa-birthday-cake"></i></span>
+         </div>
+         <input id="date" type="date" class="sing-up-birthday 
+         input-sign-up form-control" placeholder="Aniversário"/>
+        </div>
+        <div class=""form-group input -group mb-3>
+            <div class="input-group-append">
+                <span class ="input-group-text">
+                    <i class="fas fa-text">
+            <select class="sing-up-select input-sing-up-form-control">
+                <opition value ="cachorro">Cachorros</opition>
+                <opition value ="gato">Gatos</opition>
+                <opition value ="passaro">Passaro</opition>
+                <opition value ="porco">Porco</opition>
+                <opition value ="cavalo">Cavalo</opition>
+            </select>
+        <div class="form-group input-group mb-3">
+            <div class="input-group-append">
+                <span class="input-group-text">
+                    <i class="fas fa-user"></i></span>
+        <input type="text" class="sing-up-ownerName input-sing-up form-control" place holder="Nome do Responsável">
+        </div>
+        <div class="form-group input-group mb-3">
+            <span class="input-group text"><i class="fas fa-emvelope">     
+            </i></span>
+        </div>
+        <input type="text" class="sing-up-email input-sing-up form-contro " placeholder="email" />
+        </div>
+        <div class="form-group input-group mb-3">
+            <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+            <input type="password" class="sing-up-password input-sing-up form-control" placehoder="senha"/>
+            </div>
+
+            <button type="button" class="btn btn-dark btn-lg btn-block sing-up-button">
+                Cadastrar                
+            </button>
+        <div  class="d-flex justify-content-center mt-d">
+            <span class="info">*TODOS OS CAMPOS SÃO OBRIGATÓRIOS</span>
+        </div>
+    </form>
+</section>
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM crossorigin="
+  anonymous"></script>
+<script src="js/authentication.js"></script>
+</body>
+
+</html>
